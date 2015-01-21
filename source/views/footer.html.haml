@@ -1,0 +1,16 @@
+%section#universal-footer
+  .wrap
+    .footer-nav
+      - footer_items.each_pair do |title, items|
+        %ul
+          %li.title 
+            = title
+          - items.each_pair do |item, path|
+            %li
+              %a{ href: path}
+                = item
+
+%footer#copyright-footer
+  .wrap
+    %strong © 2015 leandone, inc.
+    The design of leandone are registered trademarks of leandone, inc.
