@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v2.0.1 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -347,7 +348,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 2, /Users/liushihao/.rvm/gems/ruby-2.0.0-p481/gems/neat-1.6.0/app/assets/stylesheets/grid/_grid.scss */
+/* line 2, /Users/liushihao/.rvm/gems/ruby-2.1.1/gems/neat-1.6.0/app/assets/stylesheets/grid/_grid.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -599,42 +600,225 @@ input[type="submit"] {
   vertical-align: middle;
   white-space: nowrap; }
 
-/* line 1, /Users/liushihao/programming/official_site/source/assets/stylesheets/_global.css.scss */
+/* line 1, /Users/liushihao/programming/official_site/source/assets/stylesheets/_global.sass */
 body {
-  background: #DDD;
-  color: #999; }
+  color: #666;
+  font-family: "Helvetica neue", Helvetica, Arial, sans-serif, "Microsoft Yahei", 微软雅黑, "Hiragino Sans GB", 冬青黑体, "WenQuanYi Micro Hei", 文泉驿微米黑;
+  font-size: 1em;
+  -webkit-font-smoothing: antialiased; }
 
-/* line 6, /Users/liushihao/programming/official_site/source/assets/stylesheets/_global.css.scss */
-.delete-me {
-  -webkit-box-align: center;
-  -moz-box-align: center;
-  box-align: center;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  -o-align-items: center;
-  align-items: center;
-  -ms-flex-align: center;
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  box-pack: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  -o-justify-content: center;
-  justify-content: center;
-  -ms-flex-pack: center;
-  height: 100vh; }
-  /* line 12, /Users/liushihao/programming/official_site/source/assets/stylesheets/_global.css.scss */
-  .delete-me .container {
+/* line 7, /Users/liushihao/programming/official_site/source/assets/stylesheets/_global.sass */
+h2 {
+  font-weight: bold;
+  font-size: 2.25em; }
+
+/* line 11, /Users/liushihao/programming/official_site/source/assets/stylesheets/_global.sass */
+p {
+  font-family: "freight-text-pro", serif;
+  font-size: 1.15em;
+  font-weight: normal;
+  line-height: 32px;
+  margin: 0px 0px 32px; }
+
+/* line 18, /Users/liushihao/programming/official_site/source/assets/stylesheets/_global.sass */
+nav, section {
+  display: block; }
+
+/* line 21, /Users/liushihao/programming/official_site/source/assets/stylesheets/_global.sass */
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+/* line 26, /Users/liushihao/programming/official_site/source/assets/stylesheets/_global.sass */
+.wrap {
+  maring: 0 auto; }
+
+/* line 29, /Users/liushihao/programming/official_site/source/assets/stylesheets/_global.sass */
+.header-content {
+  width: 750px;
+  margin: 0 auto;
+  display: block;
+  padding: 12.5em 0px;
+  padding-top: 12.5em;
+  padding-bottom: 12.5em;
+  text-align: center; }
+  /* line 38, /Users/liushihao/programming/official_site/source/assets/stylesheets/_global.sass */
+  .header-content h2 {
+    margin-bottom: 32px; }
+
+/* line 41, /Users/liushihao/programming/official_site/source/assets/stylesheets/_global.sass */
+ul.link-container {
+  margin: 0px;
+  padding: 0px;
+  list-style: none outside none; }
+  /* line 46, /Users/liushihao/programming/official_site/source/assets/stylesheets/_global.sass */
+  ul.link-container li {
+    display: inline-block;
+    margin-right: 1.875em; }
+    /* line 50, /Users/liushihao/programming/official_site/source/assets/stylesheets/_global.sass */
+    ul.link-container li a {
+      display: inline-block;
+      font-family: Arial;
+      font-size: 1em;
+      font-weight: 900;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #0088cc;
+      transition: color 0.1s linear 0s; }
+      /* line 60, /Users/liushihao/programming/official_site/source/assets/stylesheets/_global.sass */
+      ul.link-container li a i {
+        position: relative;
+        top: 2px;
+        font-size: 1.28571em;
+        margin-right: 0.3125em; }
+
+/* line 1, /Users/liushihao/programming/official_site/source/assets/stylesheets/_header.sass */
+#page-nav {
+  transition: all 0.1s ease-in-out;
+  background-color: #0088cc;
+  position: fixed;
+  padding: 0 48px;
+  width: 100%;
+  z-index: 100; }
+  /* line 9, /Users/liushihao/programming/official_site/source/assets/stylesheets/_header.sass */
+  #page-nav .wrap {
+    padding: 0; }
+  /* line 12, /Users/liushihao/programming/official_site/source/assets/stylesheets/_header.sass */
+  #page-nav ul {
+    margin: 0 auto;
+    width: 100%;
+    float: left;
+    display: block;
+    line-height: 4.0625em;
     text-align: center; }
-    /* line 15, /Users/liushihao/programming/official_site/source/assets/stylesheets/_global.css.scss */
-    .delete-me .container h1 {
-      font-weight: 200; }
+    /* line 20, /Users/liushihao/programming/official_site/source/assets/stylesheets/_header.sass */
+    #page-nav ul li {
+      display: inline-block;
+      margin-left: 40px; }
+      /* line 23, /Users/liushihao/programming/official_site/source/assets/stylesheets/_header.sass */
+      #page-nav ul li:first-child {
+        margin-left: 0; }
+    /* line 26, /Users/liushihao/programming/official_site/source/assets/stylesheets/_header.sass */
+    #page-nav ul a, #page-nav ul a:visited {
+      font-family: Arial;
+      color: white;
+      display: block;
+      width: 100%;
+      font-size: 0.875em;
+      font-weight: bold;
+      text-decoration: none;
+      text-transform: uppercase; }
+
+/* line 1, /Users/liushihao/programming/official_site/source/assets/stylesheets/_banner.sass */
+#banner {
+  background-color: #0088cc;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  position: relative;
+  height: 700px; }
+  /* line 9, /Users/liushihao/programming/official_site/source/assets/stylesheets/_banner.sass */
+  #banner .wrap {
+    height: 100%;
+    overflow: hidden;
+    text-align: center; }
+  /* line 14, /Users/liushihao/programming/official_site/source/assets/stylesheets/_banner.sass */
+  #banner .copy-wrap {
+    position: relative;
+    margin-top: 20%; }
+
+/* line 1, /Users/liushihao/programming/official_site/source/assets/stylesheets/_team.sass */
+#team {
+  background-color: rgba(26, 48, 58, 0.96);
+  background-image: url("/assets/images/bg_team.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px; }
+  /* line 8, /Users/liushihao/programming/official_site/source/assets/stylesheets/_team.sass */
+  #team h2 {
+    color: #FFF;
+    font-size: 2.25em;
+    text-rendering: optimizelegibility;
+    line-height: 1.3em; }
+  /* line 13, /Users/liushihao/programming/official_site/source/assets/stylesheets/_team.sass */
+  #team p {
+    color: #FFF; }
+  /* line 15, /Users/liushihao/programming/official_site/source/assets/stylesheets/_team.sass */
+  #team a {
+    color: #FFF;
+    text-align: center;
+    text-transform: uppercase;
+    display: inline-block;
+    font-family: Arial;
+    font-size: 1em;
+    font-weight: 900;
+    text-decoration: none; }
+
+/* line 1, /Users/liushihao/programming/official_site/source/assets/stylesheets/_work.sass */
+#work {
+  background-color: #FFF;
+  height: 600px; }
+  /* line 6, /Users/liushihao/programming/official_site/source/assets/stylesheets/_work.sass */
+  #work .wrap .header-content {
+    padding-top: 12.5em;
+    text-align: center;
+    margin: 0 auto;
+    width: 752px;
+    height: 506px; }
+    /* line 13, /Users/liushihao/programming/official_site/source/assets/stylesheets/_work.sass */
+    #work .wrap .header-content h2, #work .wrap .header-content a {
+      color: #0088cc; }
+
+/* line 1, /Users/liushihao/programming/official_site/source/assets/stylesheets/_community.sass */
+#community {
+  background-color: rgba(26, 48, 58, 0.96);
+  overflow: hidden;
+  position: relative;
+  height: 600px; }
+  /* line 7, /Users/liushihao/programming/official_site/source/assets/stylesheets/_community.sass */
+  #community h2, #community p, #community a {
+    color: #FFF; }
+
+/* line 1, /Users/liushihao/programming/official_site/source/assets/stylesheets/_footer.sass */
+#universal-footer {
+  background-color: #0088cc;
+  color: white;
+  position: relative; }
+  /* line 6, /Users/liushihao/programming/official_site/source/assets/stylesheets/_footer.sass */
+  #universal-footer .wrap {
+    padding: 3em 0;
+    overflow: hidden; }
+  /* line 10, /Users/liushihao/programming/official_site/source/assets/stylesheets/_footer.sass */
+  #universal-footer .footer-nav {
+    text-align: center;
+    margin: 0 auto; }
+    /* line 14, /Users/liushihao/programming/official_site/source/assets/stylesheets/_footer.sass */
+    #universal-footer .footer-nav ul {
+      display: inline-block;
+      padding: 0 1.875em;
+      text-align: left;
+      vertical-align: text-top; }
+      /* line 20, /Users/liushihao/programming/official_site/source/assets/stylesheets/_footer.sass */
+      #universal-footer .footer-nav ul li {
+        line-height: 1.625em; }
+      /* line 23, /Users/liushihao/programming/official_site/source/assets/stylesheets/_footer.sass */
+      #universal-footer .footer-nav ul a {
+        color: white; }
+      /* line 26, /Users/liushihao/programming/official_site/source/assets/stylesheets/_footer.sass */
+      #universal-footer .footer-nav ul .title {
+        text-transform: uppercase;
+        padding-bottom: 0.625em;
+        font-weight: bold; }
+
+/* line 31, /Users/liushihao/programming/official_site/source/assets/stylesheets/_footer.sass */
+#copyright-footer {
+  background-color: rgba(26, 48, 58, 0.96);
+  color: white;
+  padding: 3.125em 0;
+  text-align: center; }
+  /* line 37, /Users/liushihao/programming/official_site/source/assets/stylesheets/_footer.sass */
+  #copyright-footer strong {
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 5px; }
