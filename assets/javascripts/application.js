@@ -22,10 +22,10 @@
       return $(window).on('scroll', function() {
         if ($(document).scrollTop() > $('#banner').height()) {
           $('#page-nav').css('background-color', deepGray);
-          return $('#page-nav #logo').css('background-image', logoUrl);
+          return $('#page-nav #logo').css('color', 'white');
         } else {
           $('#page-nav').css('background-color', mainColor);
-          return $('#page-nav #logo').css('background-image', '');
+          return $('#page-nav #logo').css('color', mainColor);
         }
       });
     }
