@@ -685,6 +685,16 @@ ul.link-container {
   #page-nav .wrap {
     padding: 0; }
   /* line 12, /Users/liushihao/programming/official_site/source/assets/stylesheets/_header.sass */
+  #page-nav #logo {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 0.975em;
+    transition: all 0.1s linear;
+    display: block;
+    background-size: 120px;
+    background-repeat: no-repeat; }
+  /* line 23, /Users/liushihao/programming/official_site/source/assets/stylesheets/_header.sass */
   #page-nav ul {
     margin: 0 auto;
     width: 100%;
@@ -692,14 +702,14 @@ ul.link-container {
     display: block;
     line-height: 4.0625em;
     text-align: center; }
-    /* line 20, /Users/liushihao/programming/official_site/source/assets/stylesheets/_header.sass */
+    /* line 31, /Users/liushihao/programming/official_site/source/assets/stylesheets/_header.sass */
     #page-nav ul li {
       display: inline-block;
       margin-left: 40px; }
-      /* line 23, /Users/liushihao/programming/official_site/source/assets/stylesheets/_header.sass */
+      /* line 34, /Users/liushihao/programming/official_site/source/assets/stylesheets/_header.sass */
       #page-nav ul li:first-child {
         margin-left: 0; }
-    /* line 26, /Users/liushihao/programming/official_site/source/assets/stylesheets/_header.sass */
+    /* line 37, /Users/liushihao/programming/official_site/source/assets/stylesheets/_header.sass */
     #page-nav ul a, #page-nav ul a:visited {
       font-family: Arial;
       color: white;
@@ -719,14 +729,20 @@ ul.link-container {
   position: relative;
   height: 700px; }
   /* line 9, /Users/liushihao/programming/official_site/source/assets/stylesheets/_banner.sass */
+  #banner #logo {
+    width: 360px;
+    height: 330px;
+    margin-bottom: -80px;
+    margin-right: -20px; }
+  /* line 15, /Users/liushihao/programming/official_site/source/assets/stylesheets/_banner.sass */
   #banner .wrap {
     height: 100%;
     overflow: hidden;
     text-align: center; }
-  /* line 14, /Users/liushihao/programming/official_site/source/assets/stylesheets/_banner.sass */
+  /* line 20, /Users/liushihao/programming/official_site/source/assets/stylesheets/_banner.sass */
   #banner .copy-wrap {
     position: relative;
-    margin-top: 20%; }
+    margin-top: 13%; }
 
 /* line 1, /Users/liushihao/programming/official_site/source/assets/stylesheets/_team.sass */
 #team {
